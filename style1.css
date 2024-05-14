@@ -1,0 +1,60 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main> h1{
+    text-align: center;
+}
+.main{
+    height: 200px;
+    width: 200px;
+    background-color: #821a1a;
+    position: absolute;
+    left: 0px;
+    /* animation:name ,duration, timing-function, delay, iteration-count ,
+    direction ; */
+    animation: boxmove 2s linear 1s both ;
+    /* forward direction means to stop on TO
+    backward directon means to starts from FROM  */
+}
+
+/* @keyframes boxmove{
+    from{
+        left: 20%;
+    }
+
+    to{
+        left: 80%;
+    } */
+
+          /* to move the box in all four direction */
+ @keyframes boxmove{
+    from{
+        left: 0%;
+    }
+
+    to{
+        left:85% ;
+        top: 0;
+    }
+
+    from{
+        top: 0;
+        left: 85%;
+    }
+   to{
+    top: 80%;
+    left: 0;
+   }
+   
+}
+    
+ /* background attachment = fixed */
